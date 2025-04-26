@@ -69,7 +69,7 @@ ol {
 .result__video-container {
   width: 711px;
   height: 386px;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
  
 }
 .result__video {
@@ -83,17 +83,18 @@ ol {
   grid-template-columns: 1fr 1fr auto;
   align-items: start;
   gap:40px ;
+  margin-top: 18px;
   
 
 
 }
-.search-form {
+/* .search-form {
   width: 711px;
   height: 54px;
   display: flex;
   flex-direction: row;
 
-}
+} */
 .search-form__fieldset {
   border:none;
 }
@@ -141,6 +142,8 @@ ol {
   display: flex;
   flex-direction: column;
   gap:16px;
+  padding-left:3px ;
+  padding-right: 3px;
   
 }
 .content__card-link {
@@ -149,18 +152,35 @@ ol {
   
 }
 
-
+.content__card-link_current {
+  background-color: #545050;
+  ;
+}
 
 .content__video-card {
   display: flex;
   flex-direction: row;
   align-items: start;
+  cursor: pointer;
+
+}
+.content__video-card:hover {
+  text-decoration: underline;
+}
+.content__video-card:active {
+  background-color: #545050;
+}
+.content__video-card:focus {
+  outline: none;
+}
+.content__video-card:focus-visible {
+outline: 1px solid #fff;
 }
 .content__video-card-description-container {
   flex-grow: 1;
 }
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: 'Oswald';
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
@@ -233,20 +253,8 @@ ol {
   flex-direction: row;
   gap: 40px;
   background-color: transparent;
-  cursor: pointer;
-  
+  cursor: pointer;  
 
-}
-.search-form__checkbox {
-  display: none;
-}
-
-.search-form__checkbox-list::after {
-  display: block;
-  background-color: #fff;
-  height: 19px;
-  width: 19px;
-  
 }
 .search-form__pseudo-checkbox {
   border:1px solid #fff;
@@ -256,21 +264,20 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.search-form__checkbox-list:checked {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: 18px;
-  height: 18px;
-  background-color: #fff;
-  border: 2px solid #fff;
-
   
-
 }
 
-
+.search-form__checkbox:checked +.search-form__pseudo-checkbox::after{
+  content:"";
+  display: block;
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  
+}
+.search-form__label:hover {
+  text-decoration: underline;
+}
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -328,3 +335,4 @@ ol {
   outline: 1px solid #fff;
   outline-offset: 1px;
 }
+
