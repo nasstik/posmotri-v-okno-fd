@@ -69,7 +69,7 @@ ol {
 .result__video-container {
   width: 711px;
   height: 386px;
-  /* margin-bottom: 16px; */
+  margin-bottom: 19px;
  
 }
 .result__video {
@@ -83,7 +83,7 @@ ol {
   grid-template-columns: 1fr 1fr auto;
   align-items: start;
   gap:40px ;
-  margin-top: 18px;
+  /* margin-top: 18px; */
   
 
 
@@ -97,13 +97,22 @@ ol {
 } */
 .search-form__fieldset {
   border:none;
+
 }
 .search-form__fieldset-title {
-  font-family: 'Fira Sans Condensed' ;
+  font-family: 'Fira Sans Condensed';
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
+  letter-spacing: 0%;
+
  }
+
+.search-form__textfield {
+  height:27px;
+  width: 225px;
+  
+}
 
 
 
@@ -115,6 +124,7 @@ ol {
   gap:26px;
 }
 .title {
+  font-family: 'Oswald';
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -122,6 +132,7 @@ ol {
   height: 210px;
   width: 259px;
   margin-bottom: 26px ;
+  padding-top: 4px;
 }
 .content__accent {
   color:#545050;
@@ -141,9 +152,9 @@ ol {
 .content__list-item{
   display: flex;
   flex-direction: column;
-  gap:16px;
-  padding-left:3px ;
-  padding-right: 3px;
+  /* gap:1px; */
+  /* padding-left:px ;
+  padding-right:px; */
   
 }
 .content__card-link {
@@ -189,6 +200,7 @@ outline: 1px solid #fff;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  padding-top: 2px;
   
   
   }
@@ -199,13 +211,14 @@ outline: 1px solid #fff;
   line-height: 16.2px;
   letter-spacing: 0%;
   line-clamp: 1;
+  padding-top: 5px;
   
   }
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
-  object-fit: contain;
-  /* object-fit: cover; */
+  /* object-fit: contain; */
+  object-fit: cover;
   object-position:top right;
   flex-grow: 0;
 }
@@ -219,6 +232,12 @@ outline: 1px solid #fff;
   background-color: #000;
   color:white;
   appearance: none; 
+  font-family: 'Fira Sans Condensed';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+
  
 }
   /* .search-form__textfield:focus {
@@ -251,8 +270,9 @@ outline: 1px solid #fff;
 .search-form__checkbox-list {
   display: flex;
   flex-direction: row;
-  gap: 40px;
+  gap: 16px;
   background-color: transparent;
+  margin-top:7px;
   cursor: pointer;  
 
 }
@@ -260,7 +280,7 @@ outline: 1px solid #fff;
   border:1px solid #fff;
   height: 19px;
   width: 19px;
-  margin-right: 3px;
+  margin-right: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -309,6 +329,8 @@ outline: 1px solid #fff;
   height: 34px;
   padding: 6px 73px;
   justify-self: end;
+  margin-top: 17px;
+  margin-left: 2px;
 
 
 }
