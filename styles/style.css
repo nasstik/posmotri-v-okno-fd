@@ -17,6 +17,8 @@ html {
   font-size: 18px;
   background-color: #1b1919;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1,
@@ -53,11 +55,11 @@ ol {
 
 .content {
   display: grid;
-  place-content: center;
-  align-items: end;
+  /* place-content: center;
+  align-items: center; */
   min-width: 1140px;
-  margin-top: 133px;
-  margin-left: 30px;
+  /* margin-top: 133px;
+  margin-left: 30px; */
   grid-template-columns: 711px 1fr;
   gap: 32px;
 
@@ -67,11 +69,12 @@ ol {
   width: 711px;
   height: 386px;
   margin-bottom: 19px;
+  /* margin-top: 78px; */
  
 }
 
 .result__video {
-  object-fit: contain;
+  object-fit: cover;
   height: 100%;
   width: 100%;
 
@@ -244,7 +247,6 @@ ol {
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
-  min-height: 210px;
   width: 259px;
   margin-bottom: 20px ;
   padding-top: 4px;
